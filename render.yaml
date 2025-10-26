@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ctool-terminal
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    envVars:
+      PYTHON_VERSION: 3.11.6
